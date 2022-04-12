@@ -618,6 +618,7 @@ img {
 }
 
 /* КОНЕЦ СЕКЦИИ ПРИМЕРЫ РАБОТ, КОНЕЦ СЕКЦИИ ПОРТФОЛИО */
+ /* НАЧАЛО МОДЕЛЬНОГО ОКНА */
 
 .backdrop{
   position: fixed;
@@ -666,6 +667,9 @@ img {
   overflow: hidden;
 }
 
+/* КОНЕЦ МОДЕЛЬНОГО ОКНА */
+/* НАЧАЛО ОВЕРЛЕЙ ПОРТФОЛИО */
+
 .overlay{
   position: absolute;
   top: 0;
@@ -686,6 +690,9 @@ img {
 .element-img-overlay:focus .overlay{
   transform: translateY(0%);
 }
+
+/* КОНЕЦ ОВЕРЛЕЙ ПОРТФОЛИО */
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
 .section-picture-name{
   position: relative;
@@ -709,3 +716,4 @@ color: var(--text-and-background-color);
 background: rgba(47, 48, 58, 0.8);
 }
 
+/* КОНЕЦ ЧЕМ МЫ ЗАНИМАЕМСЯ */
