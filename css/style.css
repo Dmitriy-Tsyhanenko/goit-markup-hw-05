@@ -635,6 +635,7 @@ img {
 }
 .modal {
   position: absolute;
+  content: '';
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -648,6 +649,7 @@ img {
 }
 .modal-close-btn {
   position: absolute;
+  content: '';
   top: 8px;
   right: 8px;
   display: flex;
@@ -672,6 +674,7 @@ img {
 
 .overlay{
   position: absolute;
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -700,6 +703,7 @@ img {
 
 .picture-name { 
 position: absolute;
+content: '';
 bottom: 0;
 left: 0;
 padding: 0;
@@ -717,3 +721,26 @@ background: rgba(47, 48, 58, 0.8);
 }
 
 /* КОНЕЦ ЧЕМ МЫ ЗАНИМАЕМСЯ */
+/* НАЧАЛО ВЕРХНЕГО ПОДЧЕРКИВАНИЯ  */
+
+.active-page{
+  position: relative;
+
+}
+.active-page::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom:  -40px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color:var(--accent-collor);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.active-page:hover::after {
+  opacity:1;
+}
